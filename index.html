@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velora Travels — Discover handcrafted travel experiences across 60+ destinations worldwide." />
+  <title>Velora Travels — Where Every Journey Becomes a Story</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Home-page  -->
+  <style>
+    /*  Hero Section  */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Hero background image */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=80')
+                  center / cover no-repeat;
+      opacity: 0.32;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(13, 27, 42, 0.94) 35%,
+        rgba(13, 27, 42, 0.18) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    .hero-heading {
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      font-weight: 300;
+      color: var(--color-white);
+      line-height: 1.06;
+      margin-bottom: 22px;
+    }
+
+    .hero-heading em {
+      font-style: italic;
+      color: var(--color-primary);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.68);
+      max-width: 460px;
+      line-height: 1.78;
+      margin-bottom: 38px;
+      font-weight: 300;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!--  Navbar -->
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- SECTION 1 — HERO -->
+  <section class="hero-section" aria-label="Hero banner">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-8 col-xl-7">
+
+          <span class="hero-eyebrow animate-fade-up">
+            ✦ Award-Winning Travel Experiences
+          </span>
+
+          <h1 class="hero-heading animate-fade-up anim-delay-1">
+            Where Every<br>
+            <em>Journey</em><br>
+            Becomes a Story
+          </h1>
+
+          <p class="hero-sub animate-fade-up anim-delay-2">
+            Discover handcrafted travel experiences across 60+ destinations.
+            From serene beaches to mountain peaks — we curate journeys that last a lifetime.
+          </p>
+
+          <div class="hero-btns animate-fade-up anim-delay-3">
+            <a href="packages.html" class="btn-gold">Explore Packages</a>
+            <a href="destinations.html" class="btn-outline-white">View Destinations</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 2 — STATS BAR -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="row g-4 text-center">
+
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-num">60+</span>
+            <span class="stat-label">Destinations</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-num">12K+</span>
+            <span class="stat-label">Happy Travellers</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-num">8</span>
+            <span class="stat-label">Years of Excellence</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Satisfaction Rate</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION 3 — FEATURED DESTINATIONS -->
+  <section class="section-lg bg-cream" aria-labelledby="dest-heading">
+    <div class="container">
+
+      <!-- Section header  -->
+      <div class="row align-items-end mb-5">
+        <div class="col-md-7">
+          <span class="section-eyebrow">✦ Explore the World</span>
+          <h2 class="section-title" id="dest-heading">
+            Featured <em>Destinations</em>
+          </h2>
+          <p class="section-subtitle">
+            From ancient temples to tropical paradises — discover the destinations
+            captivating travellers this season.
+          </p>
+        </div>
+        <div class="col-md-5 text-md-end mt-3 mt-md-0">
+          <a href="destinations.html" class="btn-gold">All Destinations &rarr;</a>
+        </div>
+      </div>
+
+      <!-- destination card grid -->
+      <div class="row g-4">
+
+        <!-- Destination 1 — Bali -->
+        <div class="col-md-6 col-lg-4">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=80"
+                 alt="Bali, Indonesia — terraced rice fields and temples" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Asia &middot; Indonesia</span>
+              <h3>Bali</h3>
+              <p>Temples, terraced rice fields &amp; turquoise waters</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Destination 2 — Paris -->
+        <div class="col-md-6 col-lg-4">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80"
+                 alt="Paris, France — Eiffel Tower at night" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Europe &middot; France</span>
+              <h3>Paris</h3>
+              <p>City of lights, love, and timeless elegance</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Destination 3 — Maldives -->
+        <div class="col-md-6 col-lg-4">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=700&q=80"
+                 alt="Maldives — overwater bungalows and clear lagoon" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ South Asia &middot; Maldives</span>
+              <h3>Maldives</h3>
+              <p>Overwater bungalows in crystal-clear lagoons</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 4 — POPULAR PACKAGES -->
+  <section class="section-lg bg-warm" aria-labelledby="pkg-heading">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">✦ Handpicked for You</span>
+        <h2 class="section-title" id="pkg-heading">Popular <em>Packages</em></h2>
+        <p class="section-subtitle mx-auto">
+          All-inclusive tour packages with flights, accommodation, and unforgettable experiences.
+        </p>
+      </div>
+
+      <!-- package card grid -->
+      <div class="row g-4">
+
+        <!-- Package 1 — Japan -->
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="pkg-card w-100">
+            <img src="https://images.unsplash.com/photo-1734427842850-7a83b0bd9f10?q=80&w=764"
+                 alt="Japan cherry blossom — Kyoto temples in spring" />
+            <div class="pkg-card-body">
+              <h4>Japan Cherry Blossom Tour</h4>
+              <div class="pkg-meta">
+                <span><i class="fas fa-clock"></i> 10 Days</span>
+                <span><i class="fas fa-users"></i> Max 12</span>
+                <span><i class="fas fa-star" style="color:var(--color-primary)"></i> 4.9</span>
+              </div>
+              <p>Tokyo, Kyoto, Osaka &middot; Spring blooms, temples &amp; authentic cuisine.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="pkg-price">Rs.821,490 <small>/ person</small></div>
+                <a href="contact.html" class="btn-dark-navy">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2 — Greece -->
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="pkg-card w-100">
+            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=735"
+                 alt="Santorini, Greece — white buildings and blue domes" />
+            <div class="pkg-card-body">
+              <h4>Greek Island Escape</h4>
+              <div class="pkg-meta">
+                <span><i class="fas fa-clock"></i> 7 Days</span>
+                <span><i class="fas fa-users"></i> Max 8</span>
+                <span><i class="fas fa-star" style="color:var(--color-primary)"></i> 4.8</span>
+              </div>
+              <p>Santorini &amp; Mykonos &middot; Sunsets, sea, and Mediterranean charm.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="pkg-price">Rs. 623,890 <small>/ person</small></div>
+                <a href="contact.html" class="btn-dark-navy">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3 — Kenya -->
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="pkg-card w-100">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=700&q=80"
+                 alt="Kenya safari — elephants on the Masai Mara plains" />
+            <div class="pkg-card-body">
+              <h4>Kenya Safari Adventure</h4>
+              <div class="pkg-meta">
+                <span><i class="fas fa-clock"></i> 8 Days</span>
+                <span><i class="fas fa-users"></i> Max 6</span>
+                <span><i class="fas fa-star" style="color:var(--color-primary)"></i> 5.0</span>
+              </div>
+              <p>Masai Mara &middot; Witness the Great Migration up close.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="pkg-price">Rs. 330,040 <small>/ person</small></div>
+                <a href="contact.html" class="btn-dark-navy">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View all -->
+      <div class="text-center mt-5">
+        <a href="packages.html" class="btn-gold">View All Packages &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 5 — TESTIMONIALS -->
+  <section class="section-lg testi-section" aria-labelledby="testi-heading">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-eyebrow">✦ Traveller Stories</span>
+        <h2 class="section-title" id="testi-heading" style="color:var(--color-white);">
+          What Our Guests <em>Say</em>
+        </h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="testi-card">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+             "As a solo traveller on a tight budget, I was nervous. But Velora made my Bali trip seamless, affordable, and absolutely unforgettable. Best decision I ever made!"
+            </p>
+            <div class="testi-author">Nadiya Raashid</div>
+            <div class="testi-origin">Colombo, Sri Lanka</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testi-card">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+              "The Japan cherry blossom tour was a dream come true. The small group
+              size made it feel intimate and truly special."
+            </p>
+            <div class="testi-author">The Fernando Family</div>
+            <div class="testi-origin">Kandy, Sri Lanka</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testi-card">
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testi-quote">
+              "From the first booking call to our return flight, everything was
+              curated beautifully. Velora truly understands luxury travel."
+            </p>
+            <div class="testi-author">Sara &amp; Karthik </div>
+            <div class="testi-origin">Negambo, Sri Lanka</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 6 — CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Start Your <em>Journey?</em></h2>
+      <p>Let our travel experts craft your perfect, personalised experience.</p>
+      <a href="contact.html" class="btn-dark-navy" style="padding: 14px 38px; font-size:0.88rem;">
+        Get in Touch Today
+      </a>
+    </div>
+  </section>
+
+
+  <!--  Footer -->
+  <div id="footer-placeholder"></div>
+
+
+  <!-- Bootstrap 5.3   -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Shared components -->
+  <script src="components.js"></script>
+
+  <script>
+    renderNavbar('home');
+    renderFooter();
+  </script>
+
+</body>
+</html>

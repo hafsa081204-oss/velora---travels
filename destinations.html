@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse 60+ travel destinations curated by Velora Travels — Asia, Europe, Africa, Americas and more." />
+  <title>Destinations — Velora Travels</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Hero background for Destination page */
+    .page-hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80');
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <span class="breadcrumb-label">✦ Explore the Globe</span>
+      <h1>Our <em>Destinations</em></h1>
+    </div>
+  </header>
+
+
+  <!-- DESTINATIONS GRID SECTION -->
+  <section class="bg-cream" style="padding-bottom: 96px;">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="filter-pills" role="group" aria-label="Filter destinations by region">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="asia">Asia</button>
+        <button class="filter-pill" data-filter="europe">Europe</button>
+        <button class="filter-pill" data-filter="africa">Africa</button>
+        <button class="filter-pill" data-filter="americas">America</button>
+        <button class="filter-pill" data-filter="middle-east">Middle East</button>
+      </div>
+
+      <!-- Destination cards grid -->
+      <div class="row g-4" id="destinations-grid">
+
+        <!-- 1. Bali -->
+        <div class="col-md-6 col-lg-4" data-region="asia">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=80"
+                 alt="Bali rice terraces and temples" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Asia &middot; Indonesia</span>
+              <h3>Bali</h3>
+              <p>Temples, rice fields &amp; turquoise waters</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2. Paris -->
+        <div class="col-md-6 col-lg-4" data-region="europe">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80"
+                 alt="Paris city skyline with Eiffel Tower" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Europe &middot; France</span>
+              <h3>Paris</h3>
+              <p>City of lights and timeless romance</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3. Maldives -->
+        <div class="col-md-6 col-lg-4" data-region="asia">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=700&q=80"
+                 alt="Maldives overwater bungalows and lagoon" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ South Asia &middot; Maldives</span>
+              <h3>Maldives</h3>
+              <p>Overwater bungalows in crystal lagoons</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4. Kyoto -->
+        <div class="col-md-6 col-lg-4" data-region="asia">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1734427842850-7a83b0bd9f10?q=80&w=764"
+                 alt="Kyoto Japan cherry blossom path and temples" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Asia &middot; Japan</span>
+              <h3>Kyoto</h3>
+              <p>Ancient temples draped in cherry blossoms</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5. Santorini -->
+        <div class="col-md-6 col-lg-4" data-region="europe">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=735"
+                 alt="Santorini Greece white buildings and blue domes" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Europe &middot; Greece</span>
+              <h3>Santorini</h3>
+              <p>Iconic sunsets over the Aegean Sea</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6. Masai Mara -->
+        <div class="col-md-6 col-lg-4" data-region="africa">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=700&q=80"
+                 alt="Kenya Masai Mara safari with elephants" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Africa &middot; Kenya</span>
+              <h3>Masai Mara</h3>
+              <p>Witness the Great Migration up close</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7. Swiss Alps -->
+        <div class="col-md-6 col-lg-4" data-region="europe">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=700&q=80"
+                 alt="Swiss Alps mountain peaks and green valleys" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Europe &middot; Switzerland</span>
+              <h3>Swiss Alps</h3>
+              <p>Majestic peaks and pristine alpine villages</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8. Dubai -->
+        <div class="col-md-6 col-lg-4" data-region="middle-east">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80"
+                 alt="Dubai futuristic skyline at night" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ Middle East &middot; UAE</span>
+              <h3>Dubai</h3>
+              <p>Futuristic skylines meet desert luxury</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 9. Rio de Janeiro -->
+        <div class="col-md-6 col-lg-4" data-region="americas">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=700&q=80"
+                 alt="Rio de Janeiro Christ the Redeemer and city" />
+            <div class="dest-card-overlay"></div>
+            <div class="dest-card-body">
+              <span class="dest-region">✦ America &middot; Brazil</span>
+              <h3>Rio de Janeiro</h3>
+              <p>Carnival spirit, beaches &amp; Christ the Redeemer</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Message to display when no filter results found) -->
+      <div id="no-results" class="text-center py-5" style="display:none !important;">
+        <p class="text-muted">No destinations found for this filter.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared components -->
+  <script src="components.js"></script>
+
+  <script>
+    renderNavbar('destinations');
+    renderFooter();
+
+    const pills  = document.querySelectorAll('.filter-pill');
+    const cards  = document.querySelectorAll('#destinations-grid [data-region]');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', function () {
+        pills.forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+
+        const selected = this.dataset.filter;
+
+        cards.forEach(card => {
+          const region = card.dataset.region;
+          if (selected === 'all' || region === selected) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
